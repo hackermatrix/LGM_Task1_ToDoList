@@ -1,0 +1,210 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	width: 100%;
+	padding: 20px;
+	height: 100%;
+	background-image: url(./back3.jpg);
+	background-size: cover;
+
+
+}
+
+
+.wrapper{
+	width: 100%;
+	height: 500px;
+	max-width: 500px;
+	margin: 140px auto;
+	padding-top: 20px;
+	border-radius: 20px;
+
+	background-color: white ;
+	background-blend-mode: lighten;
+
+	box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
+
+}
+
+.wrapper header{
+	font-size: 40px;
+	font-weight: 600;
+	color: white;
+	font-family: Comic Sans MS;
+	background-color:#ab47bf ;
+	text-shadow: 0 0 1px #FFF, 0 0 1px #FFF;
+	text-align: center;
+
+}
+.wrapper .inpField{
+	margin: 25px;
+	width: 100%;
+	display: flex;
+
+
+	height: 40px;
+}
+
+::placeholder {
+  color: white;
+	font-family: 'Tapestry', cursive;
+  /* opacity: 1; */
+}
+
+.inpField input{
+	width: 80%;
+	
+	border-bottom: 3px solid #ab47bf;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	text-align: center;
+	font-size: 30px;
+	outline: none;
+
+
+}
+
+
+
+.wrapper .todoList{
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.inpField  select, textarea{
+    color: #fff;
+    font-size: 17px;
+
+}
+
+.inpField button{
+	outline: none;
+
+	height:50px;
+	width: 50px;
+	border-radius: 40px;
+	margin-left: 12px;
+	background-color: #FCF69C;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	border-style: none;
+
+
+	color: white;
+
+}
+
+.inpField button:hover{
+
+	background-color: #246479;
+
+}
+
+
+.inpField .active{
+	border: solid black;
+	color: white;
+}
+
+ul li{
+  position: relative;
+  list-style: none;
+  margin-bottom: 8px;
+  font-family: Ubuntu;
+  font-weight: bolder;
+  font-size:20px;
+  background-color: #55D8C1;
+  border-radius: 3px;
+  border-top-left-radius: 6px;
+  padding: 10px 40px;
+  cursor: default;
+  overflow: hidden;
+  word-wrap: break-word;
+	width: 90%;
+	left: 30px;
+}
+
+ul li button{
+	position: absolute;
+	outline: none;
+	border: none;
+	margin-top: -10px;
+
+	right: 0;
+	width: 40px;
+	height: 43px;
+
+}
+
+
+li button:hover{
+	color: firebrick;
+	border: solid;
+	cursor: pointer;
+}
+
+.footer{
+
+	margin: 15px auto ;
+	font-family: Ubuntu;
+	color: #979a8f;
+}
+
+span{
+	background-image: url('img.jpg');
+}
+
+.footer button{
+  padding: 6px 10px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+
+  margin-left: 5px;
+  background: inherit;
+  cursor: pointer;
+  user-select: none;
+
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.footer button:hover{
+  /* background-color: white; */
+  border:solid white 2px;
+  color: red;
+}
+
+.footer button.active{
+  opacity: 1;
+  color: #fff;
+  pointer-events: auto;
+
+}
+
+ul li.checked {
+  background: #FF6FB5;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
